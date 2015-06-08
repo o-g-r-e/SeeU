@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+ xmlns:android="http://schemas.android.com/apk/res/android"
+ android:layout_width="match_parent"
+ android:layout_height="match_parent"
+ android:orientation="vertical">
+    
+    <ListView
+                        android:id="@+id/contact_list"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" >
+                    </ListView>
+                    
+    <LinearLayout android:id="@+id/if_empty"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+	<RelativeLayout
+	    android:layout_width="match_parent"
+	    android:layout_height="wrap_content"
+	    android:paddingBottom="10dp"
+	    android:paddingLeft="10dp"
+	    android:paddingRight="0dp"
+	    android:background="@drawable/listselector"
+	    android:paddingTop="10dp" >
+	
+	    <ImageView
+	        android:id="@+id/image"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_centerVertical="true"
+	        android:src="@android:drawable/ic_menu_add" />
+	
+	    <TextView
+	        android:id="@+id/text"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_toRightOf="@id/image"
+	        android:layout_centerVertical="true"
+	        android:textColor="#000000"
+	        android:paddingLeft="10dp"
+	        android:textSize="18dp"
+	        android:text="Добавить контакт" />
+	
+	</RelativeLayout>
+
+	<View
+	    android:layout_width="match_parent"
+	    android:layout_height="1dp"
+	    android:background="@android:color/darker_gray"/>
+
+</LinearLayout>
+
+</LinearLayout>

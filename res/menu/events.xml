@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android" >
+    
+    <item android:id="@+id/options"
+          android:showAsAction="never"
+          android:title="Настройки"/>
+    
+    <item android:id="@+id/show_id_menu"
+          android:showAsAction="never"
+          android:title="Мой ID"/>
+    
+    <item android:id="@+id/help_menu"
+          android:showAsAction="never"
+          android:title="Помощь"/>
+    
+    <item android:id="@+id/exit"
+          android:showAsAction="never"
+          android:title="Выход"/>
+    
+<!--     <item android:id="@+id/replace" -->
+<!--           android:showAsAction="always" -->
+<!--           android:title="Replace"/> -->
+    
+    <item android:id="@+id/clear_event_log"
+          android:showAsAction="always"
+          android:title="Очистить список"/>
+
+</menu>

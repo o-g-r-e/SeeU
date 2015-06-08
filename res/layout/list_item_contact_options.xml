@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical" >
+    
+    <ImageView android:id="@+id/image"
+               android:layout_width="wrap_content"
+    	       android:layout_height="wrap_content"
+               android:src="@android:drawable/ic_menu_camera" />
+    
+    
+    
+		<EditText android:id="@+id/contact_name_edit_text"
+          		  android:layout_width="match_parent"
+          		  android:layout_height="wrap_content"
+          		  android:textColor="#000000"
+          		  android:singleLine="true"
+        		  android:ems="10" >
+        		  <requestFocus />
+    </EditText>
+    
+		<EditText android:id="@+id/contact_phone_edit_text"
+                  android:layout_width="match_parent"
+                  android:layout_height="wrap_content"
+                  android:textColor="#000000"
+                  android:singleLine="true"
+        		  android:ems="10" />
+		
+		<LinearLayout android:layout_width="match_parent"
+                  android:layout_height="wrap_content"
+                  android:orientation="horizontal" >
+                  
+		    <TextView android:id="@+id/id_text_view"
+                  android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+                  android:textColor="#000000"
+                  android:textSize="14sp" />
+		    
+		    <Button
+        android:id="@+id/set_contact_id_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#000000"
+        android:text="Ввести id" />
+		
+		</LinearLayout>
+
+    <Switch android:id="@+id/is_watcher_switch"
+        	android:layout_width="wrap_content"
+        	android:layout_height="wrap_content"
+        	android:textColor="#000000"
+        	android:text="Разрешить запросы вашего местополоения" />
+    
+    <Button
+        android:id="@+id/location_request_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="#000000"
+        android:text="Запрос местоположения" />
+
+    <Button
+        android:id="@+id/clear_markers_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="#000000"
+        android:text="Очистить маркеры" />
+
+</LinearLayout>

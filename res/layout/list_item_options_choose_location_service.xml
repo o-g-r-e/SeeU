@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    
+    <RadioGroup
+        android:id="@+id/radio_group"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" >
+
+        <RadioButton
+            android:id="@+id/use_gps_radio_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#000000"
+            android:text="Использовать GPS" />
+        
+        <CheckBox
+        android:id="@+id/alternative_gps_check_box"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#000000"
+        android:text="Использовать Яндекс.Локатор, если установить положение по GPS не удалось" />
+
+        <RadioButton
+            android:id="@+id/use_netmonitoring_radio_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#000000"
+            android:text="Использовать Яндекс.Локатор" />
+        
+        <CheckBox
+        android:id="@+id/alternative_netmonitoring_check_box"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#000000"
+        android:text="Использовать GPS, если установить положение по Яндекс.Локатор не удалось" />
+    </RadioGroup>
+
+    
+
+</LinearLayout>
